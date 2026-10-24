@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %} Dashbords {% endblock %}
+{% block content %}
+<h1>Welcome {{fullname}}</h1>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body">
+                    <h4>Add Recipe</h4>
+                    <p>Add your delicious recipes</p>
+                    <a href="/add_recipe" class="btn btn-primary">Add Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-body">
+                    <h4>View Recipe</h4>
+                    <p>See your all recipes</p>
+                    <a href="/recipes" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-body">
+                    <h4>AI Recipe</h4>
+                    <p>🤖Generate recipe using gemini AI.</p>
+                    <a href="/ai" class="btn btn-warning">open AI</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+
+  <title>Master cook</title>
+</head>
+
+<body style="background-color: black;">
+  <nav class="navbar navbar-expand-lg  navbar-dark " style="background-color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success ms-2"  href="/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-2"  href="{{url_for('login')}}">Login</a>
+          </li>
+    
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=1920&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D"  style="height: 300px; object-fit: cover; width: 1920px;"  class="d-block w=100 " alt="...">
+       
+    </div>
+    <div class="carousel-item">
+       <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1920X400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHx8MHx8fDA%3D" style="height: 300px; object-fit: cover; width: 1920px;" class="d-block w=100" alt="...">
+     
+    </div>
+    <div class="carousel-item">
+      <img src="https://plus.unsplash.com/premium_photo-1673580742890-4af144293960?w=1920X200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2R8ZW58MHx8MHx8fDA%3D"  style="height: 300px; object-fit: cover; width: 1920px;" class="d-block w=100" alt="...">
+     
+      
+    </div>
+  </div>
+</div> -->
+
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=1920&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+          style="height: 300px; object-fit: cover; width: 1920px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:gold;">Discover Amazing recipes</h5>
+          <form class="d-flex justify-content-center mt-3" role="search">
+            <input class="form-control me-2 w-25" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-success" type="submit">Generate</button>
+          </form>
+          <p style="color:gold;">Share delicious recipes with thw world and generate recipes instantly using AI</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1920X400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHx8MHx8fDA%3D"
+          style="height: 300px; object-fit: cover; width: 1920px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:gold;">Discover Amazing recipes</h5>
+          <p style="color:gold;">Share delicious recipes with thw world and generate recipes instantly using AI</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1673580742890-4af144293960?w=1920X200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2R8ZW58MHx8MHx8fDA%3D"
+          style="height: 300px; object-fit: cover; width: 1920px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color:gold;"> Discover Amazing recipes</h5>
+          <p style="color:gold;">Share delicious recipes with thw world and generate recipes instantly using AI</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://justsosavory.com/wp-content/uploads/2025/07/04-Paneer-Tikka-Masala.png"
+            style="height: 170px;" class="card-img-top" alt="panner">
+          <div class="card-body">
+            <h2 style="color: rgb(213, 3, 3);">Paneer Masala</h2>
+            <p class="card-text">Recipe of paneer make and enjoy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.MiAGrYafshORM2n_HLu4swHaHa?r=0&pid=Api&P=0"
+            style="height: 170px;" class="card-img-top" alt="pastha">
+          <div class="card-body">
+            <h2 style="color: rgb(213, 3, 3);">pasta</h2>
+            <p class="card-text">Recipe of pasta make and enjoy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.VHd7T8-8tlIwE90tyULPrAAAAA?r=0&pid=Api&P=0&h=180"
+            style="height: 170px;" class="card-img-top" alt="cake">
+          <div class="card-body">
+            <h2 style="color: rgb(213, 3, 3);">cake</h2>
+            <p class="card-text">Recipe of cake make and enjoy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.8QKl0A7RFK8sddWnr2-r1QHaHa?r=0&pid=Api&P=0&h=180"
+            style="height: 170px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h2 style="color: rgb(213, 3, 3);">Paneer pizza</h2>
+            <p class="card-text">Recipe of pizza make and enjoy</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

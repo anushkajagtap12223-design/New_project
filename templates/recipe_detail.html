@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}EDit {% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col=md-8">
+        <div class="shadow-lg rounded-4 border-0">
+            <div class="card-body" style="color: azure;">
+                <h2>{{recipe[1]}}</h2>
+                <hr>
+                <h4>Ingredient</h4>
+                <p>{{recipe[2]}}</p>
+                <hr>
+                <h4>Instruction</h4>
+                <p>{{recipe[3]}}</p>
+                <hr>
+                <p><strong>Created AT:</strong>{{recipe[4]}}</p>
+                <a href="/recipes">Back</a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
